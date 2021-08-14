@@ -10,6 +10,9 @@ Opis kódu:
 Form1.cs [návrh] obsahuje grafické zobrazenie hry. Vložila som zopár obrázkov .jpg a .gif. Majú transparentné pozadie.
 Form1.cs obsahuje zdrojový kód. Na začiatku sú spomenuté všetky premenné, ktoré v kóde používam. 
 Prvá metóda private void MainGameTimerEvent – zalinkované v gameTimer-i, obsahuje podmienky pre jumping a rozmiestnenie prekážok (obstacle1 a obstacle2).
+V tejto metóde sa tiež nachádza dôležitá "úloha" prekážok. Tie sa pohybujú z prava do ľava. Prekážky, ktoré sa postupne objavujú na obrazovke sa nevytvárajú stále nové. 
+Avšak vytvorím ich iba raz a potom, keď sa stratia z obrazovky sa znovu zobrazia. Ušetrí to miesto a čas.
+
 Ďaľšie 2 metódy private void keyisdown a private void keyisup – slúžia na skákanie. Ak je/nie je stlačený medzerník.
 Posledná private void GameReset – táto metóda vyresetuje všetky premenné, hráča a prekážky do pôvodného stavu. Znova spustí hru ak hráč stlačí R. 
 
