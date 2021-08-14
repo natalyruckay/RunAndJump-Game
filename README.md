@@ -14,8 +14,8 @@ Prvá metóda private void MainGameTimerEvent – zalinkované v gameTimer-i, ob
 Prekážky sa pohybujú z prava do ľava. Prekážky, ktoré sa postupne objavujú na obrazovke sa nevytvárajú stále nové. 
 Avšak vytvorím ich iba raz a potom, keď sa stratia z obrazovky sa znovu zobrazia. Ušetrí to miesto a čas. Slúži na to časť kódu napísaný pomocou foreach v tejto metóde.
 Dôležitá časť kódu, je aj logika runner-a a jumping. Dokým je stlačený medzerník runner stúpa vyššie. Aby sa nestratil z obrazovky, používam premennú integer "force",
-ktorá je nastavená na 25. To mi zabezpečí maximálny výskok runner-a. Ak dosiahne túto výšku začne znova klesať na pôvodnú pozíciu (runner.Top = 417). Táto hodnota a tiež 
-hodnoty použité pri prekážkach sú pixely, kde sa má čo zobraziť. Na to slúžia podmienky if použité v tejto metóde.
+ktorá je nastavená na 25. To mi zabezpečí maximálny výskok runner-a. Ak dosiahne túto výšku začne znova klesať na pôvodnú pozíciu (runner.Top = 417). Na to slúžia podmienky if použité v tejto metóde.
+Hodnota pozície a tiež hodnoty použité pri prekážkach sú pixely, kde sa má čo zobraziť. 
 
 Ďaľšie 2 metódy private void keyisdown a private void keyisup – slúžia na skákanie. Ak je/nie je stlačený medzerník.
 Posledná private void GameReset – táto metóda vyresetuje všetky premenné, hráča a prekážky do pôvodného stavu. Znova spustí hru ak hráč stlačí R. 
